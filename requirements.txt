@@ -1,0 +1,9 @@
+pip==20.2.4
+numpy==1.19.2
+pandas==1.1.3
+sqlalchemy==1.3.20
+keyring == 21.4.0
+cx_oracle == 8.3.0
+
+# You will also need to download comorbidipy == 0.3.1 from https://github.com/vvcb/comorbidipy
+# After this is unzipped please run: 'python setup.py install' to install it to your venv
