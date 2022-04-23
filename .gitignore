@@ -1,6 +1,4 @@
-# Boilerplate Python Gitignore with added ignore of .py and .ipynb files until they are ready for v0.1 upload
-.ipynb
-.py
+# Boilerplate Python Gitignore 
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
