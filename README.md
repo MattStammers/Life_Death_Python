@@ -2,8 +2,8 @@
 
 Quickly using open source python scripting to solve real healthcare problems
 
-### By Matt Stammers and Michael George - UHS
-#### 23/04/2022
+### By Matt Stammers and Michael George - University Hospital Southampton
+### 23/04/2022
 
 The purpose of this simple repository is to demonstrate the use of code to solve frontline clinical problems in a way that almost any frontline NHS worker could achieve with a little bit of knowledge. 
 
@@ -17,7 +17,7 @@ It should be viewed as an example only in the hope that it will inspire others t
 
 #### Scope
 
-There are two frontline clincial problems dealt with:
+There are two frontline clincial problem python examples here:
 
 1) Learning from Death: Mortality and morbidity 10-year survival score calcluation using vvcb's excellent comorbidipy: https://github.com/vvcb/comorbidipy
 2) Protecting Life: Saving life by improving the hospitals GI bleed care model and analysing the outcome with python.
@@ -26,27 +26,38 @@ There are two frontline clincial problems dealt with:
 
 The seperate projects share common dependencies as listed in requirements.txt
 
-- We recommend you start by installing a virtual environment with either 
+1. We recommend you start by installing a virtual environment with: 
 
 ```python
-python -m venv <'ENV NAME'>
-```
-or 
-```python
-conda create venv <'ENV NAME'>
+python -m venv 'ENV NAME'
+
+# OR
+
+conda create venv 'ENV NAME'
 ```
 
-- Then run 
+2. Then activate the environment
+```python
+python activate 'ENV NAME'
+
+# OR
+
+conda activate 'ENV NAME'
+
+# In VS Code you can additionally use shift-ctrl-P to select the interpreter
+```
+
+3. Then run from the command line
 ```python
 pip install -r requirements.txt
 ```
 
-- Finally run this to launch a notebook locally hosted on your browser
+4. Finally run this to launch a kernel and browser locally hosted notebook:
 ```python
 python -m notebook
 ```
 
-#### Tricky Parts
+### Tricky Parts
 
 ##### Ingesting Data
 
