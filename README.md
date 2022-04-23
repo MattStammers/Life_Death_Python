@@ -71,4 +71,8 @@ You can run the notebook directly using runipy but this generates significant un
 
 #### Finally
 
-Good luck. The above might seem a bit daunting but if you follow the process step by step with a little bit of patience you will get there.
+Good luck. The above might seem a bit daunting but if you follow the process step by step with a little bit of patience you will get there. Feel free to fork or download this repo and do what you will with it. 
+
+##### Disclaimer
+
+Obviously this code is being given away for free and as a result no guarantees can be given that it will work. The authors therefore accept no liability for its use.
