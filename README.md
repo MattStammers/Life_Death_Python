@@ -1,6 +1,6 @@
 # QI-Py
 
-Quickly using open source python scripting to solve real healthcare problems
+Quickly using open source python scripting to solve real healthcare problems. Target Audience: Anyone
 
 ### By Matt Stammers and Michael George - University Hospital Southampton
 ### 23/04/2022
