@@ -29,19 +29,23 @@ The seperate projects share common dependencies as listed in requirements.txt
 1. We recommend you start by installing a virtual environment with: 
 
 ```python
-python -m venv 'ENV NAME'
+# For pip environments
+python -m venv /path/to/environment
 
 # OR
 
+#For conda environments
 conda create venv 'ENV NAME'
 ```
 
 2. Then activate the environment
 ```python
-python activate 'ENV NAME'
+#For pip environments
+source /path/to/environment/bin/activate
 
 # OR
 
+#For conda environments
 conda activate 'ENV NAME'
 
 # In VS Code you can additionally use shift-ctrl-P to select the interpreter
@@ -49,7 +53,10 @@ conda activate 'ENV NAME'
 
 3. Then run from the command line
 ```python
+#For pip environments
 pip install -r requirements.txt
+
+#TODO - For conda environments
 ```
 
 4. You will also need to install comorbidipy from https://github.com/vvcb/comorbidipy. Once unzipped please navigate to the central directory and run
@@ -57,10 +64,20 @@ pip install -r requirements.txt
 python setup.py install
 ```
 
-5. Finally navigate to the root of this folder and either open in VSCode or other preferred IDE or to launch a kernel and brows a locally hosted notebook run:
+5. In a new terminal, navigate to the root of this folder and open in VSCode or other preferred IDE. Alternatively open up the jupyter notebook web interface with the following command:
 ```python
 python -m notebook
 ```
+
+6. Connect the jupyter notebook to a python kernel associated with your virtual environment:
+
+If using the jupyter notebook web interface, run the following command and then select the newly installed kernel from menu bar: Kernel -> Change kernel
+```python
+python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
+```
+
+If using VSCode the kernel, you can select the kernel that is associated with your virtual environment in the top right of the screen and the above command will be automatically executed.
+
 
 Then follow the seperate instructions for each script. If it doesn't make sense or you have problems please raise an issue.
 
