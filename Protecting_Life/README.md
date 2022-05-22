@@ -2,7 +2,9 @@
 
 ### Instructions
 
-For this repo we have taken a slightly different approach and built the data extractor into a .py module which is able to extract the data automatically. If you are new to python we recommend starting with 'learning from death' before moving onto this repository. 
+For this repo we have taken a slightly different approach. The data extraction and assembly components are seperated from the analysis side. To understand this better especially if you a new to Python we recommend starting with the 'learning_from_death' folder which has a less complicated assembly pipline. 
+
+The second notebook is the analysis notebook. It inherits from the data preparation notebook but focuses purely on analysis.
 
 ### Clients
 
