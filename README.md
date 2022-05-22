@@ -3,9 +3,9 @@
 Quickly using open source python scripting to solve real healthcare problems. Target Audience: Anyone
 
 ### By Matt Stammers and Michael George - University Hospital Southampton
-### 23/04/2022
+### Last Updated 22/05/2022
 
-The purpose of this simple repository is to demonstrate the use of code to solve frontline clinical problems in a way that almost any frontline NHS worker could achieve with a little bit of knowledge. 
+The purpose of this simple repository is to demonstrate the use of code to solve frontline clinical problems in a way that almost any frontline NHS worker or analyst could achieve with a little bit of knowledge. 
 
 #### Intended Audience
 
@@ -13,14 +13,16 @@ The intended audience is frontline clincians (and analysts) learning to code and
 
 #### Purpose
 
-It should be viewed as an example only in the hope that it will inspire others to try to solve similar problems in their own hospitals. 
+It should be viewed as an example in the hope that it will inspire others to try to solve similar problems in their own hospitals. We have tried to write the code in a non-intimidating way with very clear documentation to help beginners find their way through it. Within these two simple templates are the pieces to take any analyst from python newcomer to competent basic analyst. Feel free to reach out if you have questions: <mark>matt@reallyusefulmodels.com</mark>
 
 #### Scope
 
 There are two frontline clincial problem python examples here:
 
-1) Learning from Death: Mortality and morbidity 10-year survival score calcluation using vvcb's excellent comorbidipy: https://github.com/vvcb/comorbidipy
+1) Learning from Death: Mortality and morbidity 10-year survival score calcluation using vvcb's excellent comorbidipy: https://github.com/vvcb/comorbidipy.
 2) Protecting Life: Saving life by improving the hospitals GI bleed care model and analysing the outcome with python.
+
+There is also an accompanying powerpoint to go with the above for the talk given at NHS Pycom on the 26th of May 2022: https://www.youtube.com/channel/UC_jacmsGNZQR5BPP7h0EtXw/videos. If you would like to join NHS Pycom we strongly recommend you do so at https://nhs-pycom.net/ - the best way to learn is with others. 
 
 #### Installation
 
@@ -97,10 +99,10 @@ To automate your script for beginners we recommend using windows task scheduler.
 
 You can run the notebook directly using runipy but this generates significant un-necessary overhead in a small project like this and is more likely to result in problems.
 
-#### Finally
-
-Good luck. The above might seem a bit daunting but if you follow the process step by step with a little bit of patience you will get there. Feel free to fork or download this repo and do what you will with it. 
-
 ##### Disclaimer
 
-Obviously this code is being given away for free and as a result no guarantees can be given that it will work. The authors therefore accept no liability for its use.
+Obviously this code is being given away for free and as a result no guarantees can be given that it will work. The authors therefore accept no liability for it until it has been road tested by others and had holes picked in it.
+
+#### Finally
+
+Good luck. The above might seem a bit daunting but if you follow the process step by step with a little bit of patience you will get there. Feel free to fork or download this repo and do what you will with it. Our hope is that it makes you feel like a genius.
