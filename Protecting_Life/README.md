@@ -1,16 +1,12 @@
-# Learning From Death
+# Protecting Life
 
 ### Instructions
 
-Please make sure you have followed the readme before beginning. All the code is commented.
+For this repo we have taken a slightly different approach and built the data extractor into a .py module which is able to extract the data automatically. If you are new to python we recommend starting with 'learning from death' before moving onto this repository. 
 
 ### Clients
 
 We have used the oracle instantclient version 11.2 for this project to keep things simple. This is a slightly older lightweight thin-client which can connect to most oracle databases. It is pretty easy to setup and install and can be obtained from the oracle website https://www.oracle.com/downloads/, however it will obviously not work if you are querying a non-oracle database in which case you will need to select and install the correct client.
-
-### Testing
-
-If you want to test comorbidipy out without connecting directly to a local database we have included some dummy data called 'dummy_icd_data_for_testing_comorbidipy.csv' that you can load in directly. This will allow you to create at least part of the final output but the purpose of this is to be connected on-prem to the trust system by the developer.
 
 ### Usage
 
