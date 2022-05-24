@@ -1,0 +1,6 @@
+﻿patient_id,first_name,last_name,age,deceased,date_of_death,cause_of_death
+1,Simone ,Sitora,67,0,,GI Bleed
+2,Fran,Romaeus,34,0,,GI Bleed
+3,Leopoldo,Vishal,89,1,04/05/2022,GI Bleed
+4,Tamaz,Asa,78,1,28/04/2022,GI Bleed
+5,Lucifer,Grigore,98,1,12/04/2022,GI Bleed
