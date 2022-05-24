@@ -24,6 +24,8 @@ There are two frontline clincial problem python examples here:
 
 There is also an accompanying powerpoint to go with the above for the talk given at NHS Pycom on the 26th of May 2022: https://www.youtube.com/channel/UC_jacmsGNZQR5BPP7h0EtXw/videos. If you would like to join NHS Pycom we strongly recommend you do so at https://nhs-pycom.net/ - the best way to learn is with others. 
 
+We are also in the process of adding some dummy data to make it easier to understand.
+
 #### Installation
 
 The seperate projects share common dependencies as listed in requirements.txt
