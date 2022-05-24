@@ -1,22 +1,108 @@
-# Learning From Death
+# QI-Py
 
-### Instructions
+Quickly using open source python scripting to solve real healthcare problems. Target Audience: Anyone
 
-Please make sure you have followed the readme before beginning. All the code is commented.
+### By Matt Stammers and Michael George - University Hospital Southampton
+### Last Updated 22/05/2022
 
-### Clients
+The purpose of this simple repository is to demonstrate the use of code to solve frontline clinical problems in a way that almost any frontline NHS worker or analyst could achieve with a little bit of knowledge. 
 
-We have used the oracle instantclient version 11.2 for this project to keep things simple. This is a slightly older lightweight thin-client which can connect to most oracle databases. It is pretty easy to setup and install and can be obtained from the oracle website https://www.oracle.com/downloads/, however it will obviously not work if you are querying a non-oracle database in which case you will need to select and install the correct client.
+#### Intended Audience
 
-### Testing
+The intended audience is frontline clincians (and analysts) learning to code and solve problems perhaps without much programming skill or support within their current trust.
 
-If you want to test comorbidipy out without connecting directly to a local database we have included some dummy data called 'dummy_icd_data_for_testing_comorbidipy.csv' that you can load in directly. This will allow you to create at least part of the final output but the purpose of this is to be connected on-prem to the trust system by the developer.
+#### Purpose
 
-### Usage
+It should be viewed as an example in the hope that it will inspire others to try to solve similar problems in their own hospitals. We have tried to write the code in a non-intimidating way with very clear documentation to help beginners find their way through it. Within these two simple templates are the pieces to take any analyst from python newcomer to competent basic analyst. Feel free to reach out if you have questions: <mark>matt@reallyusefulmodels.com</mark>
 
-The template is there to act a guide and the SQL query wouldn't help you anyway because our PAS is unusual so we have not included the exact SQL code. You will need to speak to your local IT team to work out a SQL query that will fit your local needs - once you have the rest of the template working however this is the easy part.
+#### Scope
 
-### Bug Reporting 
+There are two frontline clincial problem python examples here:
 
-Please report any issues on the github repo
+1) Learning from Death: Mortality and morbidity 10-year survival score calcluation using vvcb's excellent comorbidipy: https://github.com/vvcb/comorbidipy.
+2) Protecting Life: Saving life by improving the hospitals GI bleed care model and analysing the outcome with python.
 
+There is also an accompanying powerpoint to go with the above for the talk given at NHS Pycom on the 26th of May 2022: https://www.youtube.com/channel/UC_jacmsGNZQR5BPP7h0EtXw/videos. If you would like to join NHS Pycom we strongly recommend you do so at https://nhs-pycom.net/ - the best way to learn is with others. 
+
+#### Installation
+
+The seperate projects share common dependencies as listed in requirements.txt
+
+1. We recommend you start by installing a virtual environment with: 
+
+```python
+# For pip environments
+python -m venv /path/to/environment
+
+# OR
+
+#For conda environments
+conda create venv 'ENV NAME'
+```
+
+2. Then activate the environment
+```python
+#For pip environments
+source /path/to/environment/bin/activate
+
+# OR
+
+#For conda environments
+conda activate 'ENV NAME'
+
+# In VS Code you can additionally use shift-ctrl-P to select the interpreter
+```
+
+3. Then run from the command line
+```python
+#For pip environments
+pip install -r requirements.txt
+
+#TODO - For conda environments
+```
+
+4. You will also need to install comorbidipy from https://github.com/vvcb/comorbidipy. Once unzipped please navigate to the central directory and run
+```python
+python setup.py install
+```
+
+5. In a new terminal, navigate to the root of this folder and open in VSCode or other preferred IDE. Alternatively open up the jupyter notebook web interface with the following command:
+```python
+python -m notebook
+```
+
+6. Connect the jupyter notebook to a python kernel associated with your virtual environment:
+
+If using the jupyter notebook web interface, run the following command and then select the newly installed kernel from menu bar: Kernel -> Change kernel
+```python
+python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
+```
+
+If using VSCode the kernel, you can select the kernel that is associated with your virtual environment in the top right of the screen and the above command will be automatically executed.
+
+
+Then follow the seperate instructions for each script. If it doesn't make sense or you have problems please raise an issue.
+
+### Tricky Parts
+
+##### Ingesting Data
+
+The first tricky part of this is ingesting the data. If you have the data available as .csv or other flat files you can clean this up and use that but we recommend where possible connecting directly to the database or warehouse because it provides far greater flexibility. The examples given feature direct database connections which you might need some help from your local network/BI teams to establish. In all likelihood this is the only part you will need extra help with
+
+##### Encrypting Keys
+
+You should never expose your credentials in any code. I would argue that you should not even expose ports or IP addresses. There are a variety of ways to protect this information - the simplest way for new beginners is to use a keyring and encrypt the keys to your local machine. That way only a hacker with access to your machine can run your code. In windows these credentials are stored by windows credential manager and as most NHS machine hard-drives are encrypted your credentials are then as secure as the machine you are working on. This technique doesn't scale particularly well but it is a good starting point for budding python scripters.
+
+##### Automation
+
+To automate your script for beginners we recommend using windows task scheduler. This stack overflow post details the simplest way to do this by converting it to a .py file first: https://stackoverflow.com/questions/65971461/jupyter-notebook-schedule-automatically. Alternatively you can write a short .bat executable and get task scheduler to run that. 
+
+You can run the notebook directly using runipy but this generates significant un-necessary overhead in a small project like this and is more likely to result in problems.
+
+##### Disclaimer
+
+Obviously this code is being given away for free and as a result no guarantees can be given that it will work. The authors therefore accept no liability for it until it has been road tested by others and had holes picked in it.
+
+#### Finally
+
+Good luck. The above might seem a bit daunting but if you follow the process step by step with a little bit of patience you will get there. Feel free to fork or download this repo and do what you will with it. Our hope is that it makes you feel like a genius.
