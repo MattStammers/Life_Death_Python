@@ -13,7 +13,7 @@ databases = {
   "Admissions" : {
     "filename" : "admissions.csv",
     "dtypes" : {},
-    "date_cols" : [] 
+    "date_cols" : ['admission_date', 'discharge_date'] 
   },
   "Physiology" : {
     "filename" : "physiology.csv",
