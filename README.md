@@ -1,4 +1,4 @@
-# QI-Py
+# Life, Death, Python
 
 Quickly using open source python scripting to solve real healthcare problems. Target Audience: Anyone
 
