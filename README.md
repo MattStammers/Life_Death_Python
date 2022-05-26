@@ -103,7 +103,7 @@ You can run the notebook directly using runipy but this generates significant un
 
 ##### Disclaimer
 
-Obviously this code is being given away for free and as a result no guarantees can be given that it will work. The authors therefore accept no liability for it until it has been road tested by others and had holes picked in it.
+Obviously this code is being given away for free and as a result no guarantees can be given that it will work. The authors therefore accept no liability for it until it has been road tested by others and had holes picked in it. All the data is complete pseudodata which we created with a random name generator.
 
 #### Finally
 
